@@ -1,24 +1,28 @@
-# README 書く
+# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#　概要
+タスクの名前と詳細を入力し、一覧として表示するtodoアプリ。
+本アプリはマイナビより出版されている「現場で使えるRuby on Rails5速習実践ガイド（５．２対応）」のハンズオンである。
+本書の内容に理解を深めながら以下を学習している。
 
-Things you may want to cover:
 
-* Ruby version
+#　学習点
+##　ログイン機能
+gem 'devise'を使用せず実装。
+以下の
+- gem 'bcrypt'によるパスワードのｄｉｇｅｓｔ変換。
+- 管理者権限の作成（admin）
+  （管理者を作成するにはコンソールでadminの値を１にして生成してください）
 
-* System dependencies
+##　テスト
+'RSpec','Capybara','FactoryBot'を用いたテストの作成
 
-* Configuration
+##　メーラーの実装
+タスクを保存した際にtaskleaf@example.comよりメールが送信される。（現状デフォルトでuser@example.comに送信される。）
 
-* Database creation
+##　Active Storageによる画像の添付
+タスク保存時に画像を添付することが可能。
 
-* Database initialization
+##　タスクのCSVのインポート/エクスポート
+トップページにボタンを設置。CSVによるタスクのインポート/エクスポートが可能
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
